@@ -1,5 +1,5 @@
 const http = require("http");
-const { URL } = require('url');
+const { URL } = require('http://fangyishouce.xl18z.com/fangyishouce/mobile/index.html');
 const path = require("path");  
 const fs = require("fs");
 const axios = require('axios')
@@ -13,7 +13,7 @@ console.log("Server has started on 8888.");
 
 //监听请求
 function onRequest(request, response) {
-    var urlObj = new URL(request.url, `http://${request.headers.host}`);
+    var urlObj = new URL(request.http://fangyishouce.xl18z.com/fangyishouce/mobile/index.html, `http://${request.headers.host}`);
 
     var pathname = urlObj.pathname;
 
@@ -25,7 +25,7 @@ function onRequest(request, response) {
     
     if(!fs.existsSync(pathname)){
       //请求
-      axios.get(websiteUrl + request.url, {responseType: 'arraybuffer',})
+      axios.get(websiteUrl + request.http://fangyishouce.xl18z.com/fangyishouce/mobile/index.html, {responseType: 'arraybuffer',})
       .then((res)=>{
         console.info('write-->', pathname)
         //创建文件夹
